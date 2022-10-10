@@ -1,0 +1,119 @@
+// Variables
+@import "variables.scss";
+
+// fonts.google (Poppins(regular,semibold))
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap');
+
+// Body General Styles
+body {
+    font-family: $ff-sans;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+// Navigation Bar
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+
+    // Chromium Logo
+    .nav-logo {
+        font-size: $fs-lg;
+        color: $clr-accent;
+        background: #fff;
+        border: 2px solid $clr-accent;
+    }
+
+    // The links
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin: 1em;
+        list-style: none;
+    }
+
+    #link_active {
+        color: $clr-light;
+        background: $clr-accent;
+    }
+
+    a {
+        color: $clr-dark;
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        transition: 200ms;
+    }
+
+    a:hover {
+        color: #fff;
+        background: $clr-accent;
+    }
+}
+
+// Section 1
+.sect-1 {
+    padding: 2em;
+
+    a {
+        color: $clr-dark;
+        font-weight: $fw-bold;
+        text-decoration: none;
+        transition: 200ms ease;
+    }
+}
+
+// Section 2
+.sect-2 {
+    text-align: center;
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: $fw-bold;
+        color: $clr-dark;
+        margin: 10px;
+        padding: 10px;
+        transition: 200ms;
+    }
+    
+    a:hover {
+        color: $clr-light;
+        background: $clr-accent;
+    }
+}
+
+.sect-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+
+    button {
+        padding: 1em 2em;
+        font-size: 1em;
+        cursor: pointer;
+        background: none;
+        border: 1px solid black;
+        transition: 200ms;
+    }
+
+    button:hover {
+        border: 1px solid transparent;
+        color: $clr-light;
+        background: $clr-accent;
+    }
+}
